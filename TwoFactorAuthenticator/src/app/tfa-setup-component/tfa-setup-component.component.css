@@ -1,0 +1,73 @@
+h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.alert {
+  max-width: 800px;
+  margin: 1rem auto;
+  font-size: 1rem;
+}
+
+.box {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  border-radius: 0.5rem;
+  max-width: 800px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.box h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.box p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+pre {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #212529;
+  overflow-x: auto;
+}
+
+button.btn {
+  margin-top: 1rem;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+input.form-control {
+  font-size: 0.95rem;
+}
+
+em {
+  color: #dc3545;
+  font-size: 0.85rem;
+}
+
+.spinner-border {
+  display: block;
+  margin: 2rem auto;
+}
+
+a.btn {
+  display: block;
+  margin: 2rem auto 0;
+  max-width: 250px;
+}

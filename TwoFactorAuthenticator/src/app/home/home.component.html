@@ -1,0 +1,29 @@
+
+
+<div class="auth-container">
+  <div class="auth-header">
+    <a href="#" (click)="logout()" class="logout-link">Log out</a>
+  </div>
+
+  <div class="auth-content">
+    <h1 class="auth-title">Two-Factor Authentication</h1>
+    <p class="auth-description">
+      Enhance your account security by enabling two-factor authentication using Google Authenticator.
+    </p>
+
+    <label class="toggle-switch">
+      <input 
+        type="checkbox" 
+        [(ngModel)]="isTwoFactorEnabled" 
+        (change)="onToggleChange()" 
+        aria-label="Enable or disable two-factor authentication"
+      />
+      <span class="slider"></span>
+    </label>
+
+    <p class="status-text">
+      Two-Factor Authentication is <strong>{{ isTwoFactorEnabled ? 'Enabled' : 'Disable' }}</strong>.
+    </p>
+  </div>
+</div>
+

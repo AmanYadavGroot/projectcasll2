@@ -1,0 +1,35 @@
+<div class="card verification-card">
+  <div class="card-body">
+    <h1 class="card-title">Two-Step Verification</h1>
+
+    <div *ngIf="showError" class="alert alert-danger" role="alert">
+      {{ errorMessage }}
+    </div>
+
+    <form [formGroup]="twoStepForm" autocomplete="off" novalidate (ngSubmit)="loginUser(twoStepForm.value)">
+      <div class="form-group row align-items-center">
+        <label for="twoFactorCode" class="col-sm-2 col-form-label">Code:</label>
+
+        <div class="col-md-5">
+          <input
+            type="text"
+            id="twoFactorCode"
+            formControlName="twoFactorCode"
+            class="form-control"
+            placeholder="Enter 6-digit code"
+          />
+        </div>
+
+        <div class="col-md-5 error-message">
+          <em *ngIf="validateControl('twoFactorCode') && hasError('twoFactorCode', 'required')">
+            The code is required.
+          </em>
+        </div>
+      </div>
+
+      <div class="form-group mt-4">
+        <button type="submit" class="btn btn-primary" [disabled]="!twoStepForm.valid">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
